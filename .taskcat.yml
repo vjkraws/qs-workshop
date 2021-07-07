@@ -1,0 +1,34 @@
+project:
+ name: qs-workshop
+ owner: vjkr@amazon.com
+ regions:
+ - us-east-1
+ template: ./templates/master.template.yaml
+ parameters:
+    RemoteAccessCIDR: 10.0.0.0/16
+    QSS3BucketName: "$[taskcat_autobucket]"
+    QSS3BucketRegion: $[taskcat_current_region]
+    QSS3KeyPrefix: "qs-workshop/"
+    EmailAddress: vjkr@amazon.com
+    KeyPairName: ec2kp
+    WebserverCIDR: "0.0.0.0/0"
+ lambda_source_path: functions/source
+ lambda_zip_path: functions/packages
+
+
+tests:
+ defaults:
+   regions:
+   - us-east-1    
+   parameters:
+    AvailabilityZones: $[taskcat_genaz_3]
+    ProvisionBastionHost: Enabled
+    EKSPublicAccessEndpoint: Enabled
+    QSS3BucketName: "$[taskcat_autobucket]"
+    QSS3BucketRegion: $[taskcat_current_region]
+    QSS3KeyPrefix: "qs-workshop/"
+    TestSuite: Enabled
+    ClusterAutoScaler: Disabled
+    ALBIngressController: Disabled
+    PerAccountSharedResources: "No"
+    PerRegionSharedResources: "No"

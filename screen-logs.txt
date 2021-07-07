@@ -1,0 +1,479 @@
+ _            _             _   
+| |_ __ _ ___| | _____ __ _| |_ 
+| __/ _` / __| |/ / __/ _` | __|
+| || (_| \__ \   < (_| (_| | |_ 
+ \__\__,_|___/_|\_\___\__,_|\__|
+                                
+
+
+version 0.9.23
+Not in terminal, reprint now using normal build-in print function.
+
+[INFO   ] : Packaging lambda source from /home/ec2-user/qs-workshop/submodules/quickstart-aws-eks/functions/source/CleanupLambdas using docker image taskcat-build-485a077a33155611be0b9018e00fe062
+[INFO   ] : Packaging lambda source from /home/ec2-user/qs-workshop/submodules/quickstart-aws-eks/functions/source/CleanupLoadBalancers using docker image taskcat-build-84b3f47f1a2d550d9468680ae8d4a155
+[INFO   ] : Packaging lambda source from /home/ec2-user/qs-workshop/submodules/quickstart-aws-eks/functions/source/CleanupSecurityGroupDependencies using docker image taskcat-build-cd7669ece05159f79a4f90a6aa913bdb
+[INFO   ] : Packaging lambda source from /home/ec2-user/qs-workshop/submodules/quickstart-aws-eks/functions/source/DeleteBucketContents using docker image taskcat-build-a4e49f4d14e85a27bbc32ac7a63318dc
+[INFO   ] : Packaging lambda source from /home/ec2-user/qs-workshop/submodules/quickstart-aws-eks/functions/source/EksClusterResource using docker image taskcat-build-5b8b79ddb3fe52a48e9056f5bb146144
+[INFO   ] : Packaging lambda source from /home/ec2-user/qs-workshop/submodules/quickstart-aws-eks/functions/source/FargateProfile using docker image taskcat-build-2b3e0fce7f3450afa77b6f1e4845b2bd
+[INFO   ] : Packaging lambda source from /home/ec2-user/qs-workshop/submodules/quickstart-aws-eks/functions/source/GetCallerArn using docker image taskcat-build-4ef2d2dc226054169b185000c1844927
+[INFO   ] : Packaging lambda source from /home/ec2-user/qs-workshop/submodules/quickstart-aws-eks/functions/source/HelmReleaseResource using docker image taskcat-build-1ee20985406d514fac98a7063bfcb53e
+[INFO   ] : Packaging lambda source from /home/ec2-user/qs-workshop/submodules/quickstart-aws-eks/functions/source/KubeGet using docker image taskcat-build-c4d539431d655f249f4feeb7bc3d3638
+[INFO   ] : Packaging lambda source from /home/ec2-user/qs-workshop/submodules/quickstart-aws-eks/functions/source/KubeManifest using docker image taskcat-build-873b0b038d8d574c9e48d07f5f298213
+[INFO   ] : Packaging lambda source from /home/ec2-user/qs-workshop/submodules/quickstart-aws-eks/functions/source/awscliLayer using docker image taskcat-build-0018140bc26a58d98a462fe2e7fd8c6b
+[INFO   ] : Packaging lambda source from /home/ec2-user/qs-workshop/submodules/quickstart-aws-eks/functions/source/boto3Layer using docker image taskcat-build-4f61275188f8582cb98a27fb6a8b95be
+[INFO   ] : Packaging lambda source from /home/ec2-user/qs-workshop/submodules/quickstart-aws-eks/functions/source/createVpcRole using docker image taskcat-build-0052be74d9d25d91add1c217027a4872
+[INFO   ] : Packaging lambda source from /home/ec2-user/qs-workshop/submodules/quickstart-aws-eks/functions/source/crhelperLayer using docker image taskcat-build-5be45ab819665f36a81decb1aa84dce4
+[INFO   ] : Packaging lambda source from /home/ec2-user/qs-workshop/submodules/quickstart-aws-eks/functions/source/kubectlLayer using docker image taskcat-build-b87f0c362c2e5b2fa98c7975dc0adc31
+[INFO   ] : Packaging lambda source from /home/ec2-user/qs-workshop/submodules/quickstart-aws-eks/functions/source/registerCustomResource using docker image taskcat-build-6779308d602e5ff187c69c6912067c25
+[INFO   ] : Packaging lambda source from /home/ec2-user/qs-workshop/submodules/quickstart-aws-eks/functions/source/registerType using docker image taskcat-build-92e4d156ebf35e37bc8b46a5fc24d61c
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/auto.sh
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/awsqs-kubernetes-helm.zip
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/templates/amazon-eks-advanced-configuration.template.yaml
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/templates/amazon-eks.template.yaml
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/templates/amazon-eks-entrypoint-existing-vpc.template.yaml
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/Makefile
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/source/CleanupLambdas/lambda_function.py
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/source/CleanupSecurityGroupDependencies/lambda_function.py
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/source/EksClusterResource/LICENSE.txt
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/source/EksClusterResource/deploy.template.yaml
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/source/EksClusterResource/cmd/resource/eks.go
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/source/EksClusterResource/cmd/resource/k8sauth.go
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/source/EksClusterResource/cmd/resource/stabilize.go
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/source/GetCallerArn/Dockerfile
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/source/HelmReleaseResource/Makefile.package
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/source/HelmReleaseResource/resource-role.yaml
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/source/HelmReleaseResource/template.yml
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/source/HelmReleaseResource/cmd/main.go
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/source/EksClusterResource/cmd/resource/lambda.go
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/source/EksClusterResource/vpc/main.go
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/NOTICE.txt
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/source/HelmReleaseResource/cmd/resource/action.go
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/source/DeleteBucketContents/Dockerfile
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/source/EksClusterResource/cmd/resource/model.go
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/screen-logs.txt
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/source/EksClusterResource/go.mod
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/build/lambda_package.sh
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/source/EksClusterResource/cmd/resource/eks_handlers.go
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/source/EksClusterResource/Makefile.package
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/source/HelmReleaseResource/awsqs-kubernetes-helm.json
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/source/CleanupLoadBalancers/Dockerfile
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/templates/amazon-eks-functions.template.yaml
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/source/HelmReleaseResource/cmd/resource/action_test.go
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/templates/amazon-eks-prerequisites.template.yaml
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/source/GetCallerArn/lambda_function.py
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/ci/taskcat.yml
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/source/EksClusterResource/cmd/resource/resource.go
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/source/FargateProfile/Dockerfile
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/source/EksClusterResource/spec.json
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/source/EksClusterResource/cmd/resource/events.go
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/source/CleanupLambdas/Dockerfile
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/lambda.zip
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/source/DeleteBucketContents/lambda_function.py
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/source/EksClusterResource/NOTICE.txt
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/source/CleanupLoadBalancers/lambda_function.py
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/source/HelmReleaseResource/deploy.template.yaml
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/ci/workshop_input.json
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/source/FargateProfile/lambda_function.py
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/templates/amazon-eks-iam.template.yaml
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/templates/amazon-eks-per-region-resources.template.yaml
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/source/HelmReleaseResource/cmd/resource/events_test.go
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/source/HelmReleaseResource/Dockerfile
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/source/HelmReleaseResource/cmd/resource/kube_test.go
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/source/EksClusterResource/cmd/main.go
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/source/HelmReleaseResource/cmd/resource/aws.go
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/source/EksClusterResource/cmd/resource/iam.go
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/awsqs-eks-cluster.zip
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/source/EksClusterResource/awsqs-eks-cluster.json
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/source/EksClusterResource/Dockerfile
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/source/HelmReleaseResource/go.mod
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/templates/amazon-eks-entrypoint-new-vpc.template.yaml
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/source/CleanupSecurityGroupDependencies/Dockerfile
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/source/HelmReleaseResource/cmd/resource/resource.go
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/LICENSE.txt
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/source/HelmReleaseResource/Makefile
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/source/HelmReleaseResource/cmd/resource/helm.go
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/templates/amazon-eks-per-account-resources.template.yaml
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/source/HelmReleaseResource/cmd/resource/utils_test.go
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/source/HelmReleaseResource/cmd/resource/testdata/test_lambda.zip
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/source/KubeGet/lambda_function.py
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/source/awscliLayer/Dockerfile
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/source/HelmReleaseResource/cmd/resource/aws_test.go
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/source/HelmReleaseResource/cmd/resource/resource_test.go
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/source/createVpcRole/Dockerfile
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/source/HelmReleaseResource/cmd/resource/lambda.go
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/source/kubectlLayer/Dockerfile
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/source/HelmReleaseResource/cmd/resource/helm_test.go
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/source/registerType/Dockerfile
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/source/HelmReleaseResource/vpc/main.go
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/packages/CleanupLoadBalancers/lambda.zip
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/source/awscliLayer/requirements.txt
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/source/HelmReleaseResource/cmd/resource/testdata/dep-0.1.0.tgz
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/packages/EksClusterResource/awsqs-eks-cluster.zip
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/packages/HelmReleaseResource/awsqs-kubernetes-helm.zip
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/source/HelmReleaseResource/cmd/resource/testing.go
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/source/KubeManifest/Dockerfile
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/source/HelmReleaseResource/cmd/resource/events.go
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/source/HelmReleaseResource/cmd/resource/kube.go
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/source/registerCustomResource/Dockerfile
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/source/registerType/lambda_function.py
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/source/createVpcRole/lambda_function.py
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/source/boto3Layer/Dockerfile
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/source/HelmReleaseResource/vpc/main_test.go
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/source/HelmReleaseResource/cmd/resource/lambda_test.go
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/source/HelmReleaseResource/cmd/resource/testdata/test.tgz
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/packages/CleanupSecurityGroupDependencies/lambda.zip
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/source/KubeManifest/lambda_function.py
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/source/boto3Layer/requirements.txt
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/packages/boto3Layer/lambda.zip
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/source/crhelperLayer/Dockerfile
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/source/KubeGet/Dockerfile
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/source/registerType/requirements.txt
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/packages/registerCustomResource/lambda.zip
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/source/registerCustomResource/lambda_function.py
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/packages/DeleteBucketContents/lambda.zip
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/source/HelmReleaseResource/cmd/resource/model.go
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/scripts/install-worker.sh
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/source/HelmReleaseResource/cmd/resource/utils.go
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/source/KubeManifest/requirements.txt
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/source/crhelperLayer/requirements.txt
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/scripts/amazon-eks/kubelet-config.json
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/packages/CleanupLambdas/lambda.zip
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/packages/EksClusterResource/lambda.zip
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/source/registerCustomResource/requirements.txt
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/scripts/amazon-eks/logrotate-kube-proxy
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/submodules/quickstart-aws-vpc/.github/workflows/master-docs-build.yml
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/source/HelmReleaseResource/cmd/resource/testdata/test.yaml
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/packages/registerType/lambda.zip
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/scripts/amazon-eks/bootstrap.sh
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/scripts/amazon-eks/kubelet-kubeconfig
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/submodules/quickstart-aws-vpc/ci/aws-vpc-4az-complete.json
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/submodules/quickstart-aws-vpc/ci/aws-vpc-dedicated.json
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/submodules/quickstart-aws-vpc/ci/taskcat.yml
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/submodules/quickstart-aws-vpc/docs/images/choosing-region.png
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/submodules/quickstart-aws-vpc/LICENSE.txt
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/submodules/quickstart-aws-vpc/docs/include/css-switch.script
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/submodules/quickstart-aws-vpc/ci/aws-vpc-3az-complete.json
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/scripts/amazon-eks/kubelet.service
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/submodules/quickstart-aws-vpc/docs/include/params.adoc
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/scripts/amazon-eks/docker-daemon.json
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/submodules/quickstart-aws-vpc/docs/index.adoc
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/submodules/quickstart-aws-vpc/ci/aws-vpc-defaults.json
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/scripts/bastion_banner_message.txt
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/submodules/quickstart-aws-vpc/docs/images/create-key-pair.png
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/submodules/quickstart-aws-vpc/ci/aws-vpc-4az-public.json
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/submodules/quickstart-aws-vpc/docs/include/launch_the_stack.adoc
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/submodules/quickstart-aws-vpc/docs/include/quicklink.adoc
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/scripts/amazon-eks/eni-max-pods.txt
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/submodules/quickstart-aws-vpc/ci/aws-vpc-3az-public.json
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/submodules/quickstart-aws-vpc/docs/css/asciidoctor.css
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/submodules/quickstart-aws-vpc/NOTICE.txt
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/scripts/amazon-eks/kubelet.service.1.15
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/submodules/quickstart-aws-vpc/ci/aws-vpc-public.json
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/submodules/quickstart-aws-vpc/ci/aws-vpc-4az.json
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/scripts/bastion_bootstrap.sh
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/submodules/quickstart-aws-vpc/ci/aws-vpc-3az.json
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/submodules/quickstart-aws-vpc/docs/include/common/cost.adoc
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/submodules/quickstart-aws-vpc/docs/include/other_applications.adoc
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/submodules/quickstart-aws-vpc/docs/include/subnet_sizing.adoc
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/submodules/quickstart-aws-vpc/.github/workflows/develop-docs-build.yml
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/submodules/quickstart-aws-vpc/docs/include/generated/services.adoc
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/submodules/quickstart-aws-vpc/docs/include/architecture.adoc
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/submodules/quickstart-aws-vpc/ci/aws-vpc-complete.json
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/submodules/quickstart-aws-vpc/docs/images/architecture.png
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/submodules/quickstart-aws-vpc/templates/aws-vpc.template.yaml
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/submodules/quickstart-aws-vpc/ci/aws-vpc-sa-east-1.json
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/submodules/quickstart-aws-vpc/docs/include/common/prepare_an_aws_ccount.adoc
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/submodules/quickstart-aws-vpc/docs/include/common/about_this_guide.adoc
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/submodules/quickstart-eks-snyk/LICENSE.txt
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/submodules/quickstart-eks-snyk/docs/images/deploy2.png
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/submodules/quickstart-aws-vpc/docs/utils/generate_parms.py
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/submodules/quickstart-aws-vpc/docs/include/best_practice.adoc
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/submodules/quickstart-aws-vpc/docs/include/overview.adoc
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/submodules/quickstart-linux-bastion/NOTICE.txt
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/submodules/quickstart-linux-bastion/templates/linux-bastion.template
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/templates/amazon-eks-efs.template.yaml
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/submodules/quickstart-aws-vpc/docs/utils/requirements.txt
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/submodules/quickstart-eks-newrelic-infrastructure/LICENSE.txt
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/templates/amazon-eks-iam.template.yaml
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/submodules/quickstart-aws-vpc/docs/include/common/security.adoc
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/submodules/quickstart-eks-snyk/NOTICE.txt
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/templates/amazon-eks-nodegroup.template.yaml
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/submodules/quickstart-eks-snyk/docs/images/deploy3.png
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/submodules/quickstart-linux-bastion/scripts/banner_message.txt
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/templates/amazon-eks-alb-ingress.template.yaml
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/submodules/quickstart-aws-vpc/templates/aws-vpc.template
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/submodules/quickstart-eks-snyk/docs/images/architecture.png
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/submodules/quickstart-eks-newrelic-infrastructure/NOTICE.txt
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/templates/amazon-eks-master-existing-cluster.template.yaml
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/submodules/quickstart-aws-vpc/docs/include/common/troubleshoot.adoc
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/submodules/quickstart-eks-snyk/templates/eks-snyk.template.yaml
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/submodules/quickstart-linux-bastion/scripts/bastion_bootstrap.sh
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/templates/amazon-eks-fargate-profile.template.yaml
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/submodules/quickstart-eks-newrelic-infrastructure/templates/new-relic-infrastructure.template.yaml
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/templates/amazon-eks-cluster-autoscaler.template.yaml
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/submodules/quickstart-linux-bastion/LICENSE.txt
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/templates/amazon-eks-prometheus.template.yaml
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/templates/amazon-eks-master-existing-vpc.template.yaml
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/templates/amazon-eks-functions.template.yaml
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/submodules/quickstart-linux-bastion/templates/linux-bastion-master.template
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/templates/amazon-eks-controlplane.template.yaml
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/templates/amazon-eks.template.yaml
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/templates/amazon-eks-master.template.yaml
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/submodules/quickstart-eks-snyk/docs/images/deploy1.png
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/templates/amazon-eks-grafana.template.yaml
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/templates/example-workload.template.yaml
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/packages/createVpcRole/lambda.zip
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/packages/crhelperLayer/lambda.zip
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/packages/kubectlLayer/lambda.zip
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/packages/FargateProfile/lambda.zip
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/packages/GetCallerArn/lambda.zip
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/packages/HelmReleaseResource/lambda.zip
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/templates/workshop.template.yaml
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/templates/master.template.yaml
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/templates/workload.template.yaml
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/packages/KubeGet/lambda.zip
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/packages/KubeManifest/lambda.zip
+[S3: -> ] s3://tcat-qs-workshop-r94ai961/qs-workshop/submodules/quickstart-aws-eks/functions/packages/awscliLayer/lambda.zip
+         ┏ stack Ⓜ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442
+         ┣ region: us-east-1
+         ┗ status: CREATE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442
+         ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-AdvancedConfigDefaultsStack-YJGQFQKQQBIT
+         ┣ region: us-east-1
+         ┗ status: CREATE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442
+         ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-AdvancedConfigDefaultsStack-YJGQFQKQQBIT
+         ┣ region: us-east-1
+         ┗ status: CREATE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442
+         ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-AdvancedConfigDefaultsStack-YJGQFQKQQBIT
+         ┣ region: us-east-1
+         ┗ status: CREATE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442
+         ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-AdvancedConfigDefaultsStack-YJGQFQKQQBIT
+         ┣ region: us-east-1
+         ┗ status: CREATE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442
+         ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-AdvancedConfigDefaultsStack-YJGQFQKQQBIT
+         ┣ region: us-east-1
+         ┗ status: CREATE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442
+         ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-AdvancedConfigDefaultsStack-YJGQFQKQQBIT
+         ┣ region: us-east-1
+         ┗ status: CREATE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442
+         ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-AdvancedConfigDefaultsStack-YJGQFQKQQBIT
+         ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-VPCStack-O9EBSLE4MY75
+         ┣ region: us-east-1
+         ┗ status: CREATE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442
+         ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-AdvancedConfigDefaultsStack-YJGQFQKQQBIT
+         ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-VPCStack-O9EBSLE4MY75
+         ┣ region: us-east-1
+         ┗ status: CREATE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442
+         ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-AdvancedConfigDefaultsStack-YJGQFQKQQBIT
+         ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-VPCStack-O9EBSLE4MY75
+         ┣ region: us-east-1
+         ┗ status: CREATE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442
+         ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-AdvancedConfigDefaultsStack-YJGQFQKQQBIT
+         ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-VPCStack-O9EBSLE4MY75
+         ┣ region: us-east-1
+         ┗ status: CREATE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442
+         ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-AdvancedConfigDefaultsStack-YJGQFQKQQBIT
+         ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-VPCStack-O9EBSLE4MY75
+         ┣ region: us-east-1
+         ┗ status: CREATE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442
+         ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-AdvancedConfigDefaultsStack-YJGQFQKQQBIT
+         ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-VPCStack-O9EBSLE4MY75
+         ┣ region: us-east-1
+         ┗ status: CREATE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442
+         ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-AdvancedConfigDefaultsStack-YJGQFQKQQBIT
+         ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-VPCStack-O9EBSLE4MY75
+         ┣ region: us-east-1
+         ┗ status: CREATE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442
+         ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-AdvancedConfigDefaultsStack-YJGQFQKQQBIT
+         ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-VPCStack-O9EBSLE4MY75
+         ┣ region: us-east-1
+         ┗ status: CREATE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442
+         ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-AdvancedConfigDefaultsStack-YJGQFQKQQBIT
+         ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-VPCStack-O9EBSLE4MY75
+         ┣ region: us-east-1
+         ┗ status: CREATE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442
+         ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-AdvancedConfigDefaultsStack-YJGQFQKQQBIT
+         ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-VPCStack-O9EBSLE4MY75
+         ┣ region: us-east-1
+         ┗ status: CREATE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442
+         ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-AdvancedConfigDefaultsStack-YJGQFQKQQBIT
+         ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-VPCStack-O9EBSLE4MY75
+         ┣ region: us-east-1
+         ┗ status: CREATE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442
+         ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-AdvancedConfigDefaultsStack-YJGQFQKQQBIT
+         ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-VPCStack-O9EBSLE4MY75
+         ┣ region: us-east-1
+         ┗ status: CREATE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442
+         ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-AdvancedConfigDefaultsStack-YJGQFQKQQBIT
+         ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-VPCStack-O9EBSLE4MY75
+         ┣ region: us-east-1
+         ┗ status: CREATE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442
+         ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-AdvancedConfigDefaultsStack-YJGQFQKQQBIT
+         ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-VPCStack-O9EBSLE4MY75
+         ┣ region: us-east-1
+         ┗ status: CREATE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442
+         ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-AdvancedConfigDefaultsStack-YJGQFQKQQBIT
+         ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-VPCStack-O9EBSLE4MY75
+         ┣ region: us-east-1
+         ┗ status: CREATE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442
+         ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-AdvancedConfigDefaultsStack-YJGQFQKQQBIT
+         ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-VPCStack-O9EBSLE4MY75
+         ┣ region: us-east-1
+         ┗ status: CREATE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442
+         ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-AdvancedConfigDefaultsStack-YJGQFQKQQBIT
+         ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-VPCStack-O9EBSLE4MY75
+         ┣ region: us-east-1
+         ┗ status: CREATE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442
+         ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-AdvancedConfigDefaultsStack-YJGQFQKQQBIT
+         ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-VPCStack-O9EBSLE4MY75
+         ┣ region: us-east-1
+         ┗ status: CREATE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442
+[WARN   ] : Failed to import child stack: An error occurred (ValidationError) when calling the GetTemplate operation: Processed template of Stack tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-EKSStack-1CHJPUFTU9EIP is not ready. Specify Original to get user-submitted template.
+         ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-AdvancedConfigDefaultsStack-YJGQFQKQQBIT
+         ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-VPCStack-O9EBSLE4MY75
+         ┣ region: us-east-1
+         ┗ status: CREATE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442
+         ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-AdvancedConfigDefaultsStack-YJGQFQKQQBIT
+         ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-VPCStack-O9EBSLE4MY75
+         ┣ region: us-east-1
+         ┗ status: CREATE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442
+         ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-AdvancedConfigDefaultsStack-YJGQFQKQQBIT
+         ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-VPCStack-O9EBSLE4MY75
+         ┣ region: us-east-1
+         ┗ status: CREATE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442
+         ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-AdvancedConfigDefaultsStack-YJGQFQKQQBIT
+         ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-VPCStack-O9EBSLE4MY75
+         ┣ region: us-east-1
+         ┗ status: CREATE_IN_PROGRESS
+[INFO   ] : ┏ stack Ⓜ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442
+[INFO   ] : ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-AdvancedConfigDefaultsStack-YJGQFQKQQBIT
+[INFO   ] : ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-VPCStack-O9EBSLE4MY75
+[INFO   ] : ┣ region: us-east-1
+[INFO   ] : ┗ status: CREATE_FAILED 
+[WARN   ] : Failed to import child stack: An error occurred (ValidationError) when calling the GetTemplate operation: Processed template of Stack tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-EKSStack-1CHJPUFTU9EIP is not ready. Specify Original to get user-submitted template.
+[WARN   ] : Failed to import child stack: An error occurred (ValidationError) when calling the GetTemplate operation: Processed template of Stack tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-EKSStack-1CHJPUFTU9EIP is not ready. Specify Original to get user-submitted template.
+[INFO   ] : Reporting on arn:aws:cloudformation:us-east-1:628530286159:stack/tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442/12b4fe90-ddb6-11eb-8c44-125ba4d329dd
+[INFO   ] : Deleting stack: arn:aws:cloudformation:us-east-1:628530286159:stack/tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442/12b4fe90-ddb6-11eb-8c44-125ba4d329dd
+         ┏ stack Ⓜ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442
+         ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-AdvancedConfigDefaultsStack-YJGQFQKQQBIT
+         ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-VPCStack-O9EBSLE4MY75
+         ┣ region: us-east-1
+         ┗ status: DELETE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442
+         ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-AdvancedConfigDefaultsStack-YJGQFQKQQBIT
+         ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-VPCStack-O9EBSLE4MY75
+         ┣ region: us-east-1
+         ┗ status: DELETE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442
+         ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-AdvancedConfigDefaultsStack-YJGQFQKQQBIT
+         ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-VPCStack-O9EBSLE4MY75
+         ┣ region: us-east-1
+         ┗ status: DELETE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442
+         ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-AdvancedConfigDefaultsStack-YJGQFQKQQBIT
+         ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-VPCStack-O9EBSLE4MY75
+         ┣ region: us-east-1
+         ┗ status: DELETE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442
+         ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-AdvancedConfigDefaultsStack-YJGQFQKQQBIT
+         ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-VPCStack-O9EBSLE4MY75
+         ┣ region: us-east-1
+         ┗ status: DELETE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442
+         ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-AdvancedConfigDefaultsStack-YJGQFQKQQBIT
+         ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-VPCStack-O9EBSLE4MY75
+         ┣ region: us-east-1
+         ┗ status: DELETE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442
+         ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-AdvancedConfigDefaultsStack-YJGQFQKQQBIT
+         ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-VPCStack-O9EBSLE4MY75
+         ┣ region: us-east-1
+         ┗ status: DELETE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442
+         ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-AdvancedConfigDefaultsStack-YJGQFQKQQBIT
+         ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-VPCStack-O9EBSLE4MY75
+         ┣ region: us-east-1
+         ┗ status: DELETE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442
+         ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-AdvancedConfigDefaultsStack-YJGQFQKQQBIT
+         ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-VPCStack-O9EBSLE4MY75
+         ┣ region: us-east-1
+         ┗ status: DELETE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442
+         ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-AdvancedConfigDefaultsStack-YJGQFQKQQBIT
+         ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-VPCStack-O9EBSLE4MY75
+         ┣ region: us-east-1
+         ┗ status: DELETE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442
+         ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-AdvancedConfigDefaultsStack-YJGQFQKQQBIT
+         ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-VPCStack-O9EBSLE4MY75
+         ┣ region: us-east-1
+         ┗ status: DELETE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442
+         ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-AdvancedConfigDefaultsStack-YJGQFQKQQBIT
+         ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-VPCStack-O9EBSLE4MY75
+         ┣ region: us-east-1
+         ┗ status: DELETE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442
+         ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-AdvancedConfigDefaultsStack-YJGQFQKQQBIT
+         ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-VPCStack-O9EBSLE4MY75
+         ┣ region: us-east-1
+         ┗ status: DELETE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442
+         ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-AdvancedConfigDefaultsStack-YJGQFQKQQBIT
+         ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-VPCStack-O9EBSLE4MY75
+         ┣ region: us-east-1
+         ┗ status: DELETE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442
+         ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-AdvancedConfigDefaultsStack-YJGQFQKQQBIT
+         ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-VPCStack-O9EBSLE4MY75
+         ┣ region: us-east-1
+         ┗ status: DELETE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442
+         ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-AdvancedConfigDefaultsStack-YJGQFQKQQBIT
+         ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-VPCStack-O9EBSLE4MY75
+         ┣ region: us-east-1
+         ┗ status: DELETE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442
+         ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-AdvancedConfigDefaultsStack-YJGQFQKQQBIT
+         ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-VPCStack-O9EBSLE4MY75
+         ┣ region: us-east-1
+         ┗ status: DELETE_IN_PROGRESS
+         ┏ stack Ⓜ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442
+         ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-AdvancedConfigDefaultsStack-YJGQFQKQQBIT
+         ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-VPCStack-O9EBSLE4MY75
+         ┣ region: us-east-1
+         ┗ status: DELETE_IN_PROGRESS
+[INFO   ] : ┏ stack Ⓜ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442
+[INFO   ] : ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-AdvancedConfigDefaultsStack-YJGQFQKQQBIT
+[INFO   ] : ┣ stack Ⓝ tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442-VPCStack-O9EBSLE4MY75
+[INFO   ] : ┣ region: us-east-1
+[INFO   ] : ┗ status: OUT_OF_ORDER_EVENT 
+[ERROR  ] : One or more stacks failed to create: {'arn:aws:cloudformation:us-east-1:628530286159:stack/tCaT-qs-workshop-defaults-ee721c86099e4c38ba2e87378f0e3442/12b4fe90-ddb6-11eb-8c44-125ba4d329dd': 'COMPLETE event not detected. Potential out-of-band action against the stack.'}

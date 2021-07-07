@@ -1,0 +1,24 @@
+-----------------------------------------------------------------------------
+Region: us-east-1
+StackName: tCaT-qs-workshop-defaults-06a55a96100b4d25874296190e87bf87
+*****************************************************************************
+ResourceStatusReason:  
+The following resource(s) failed to create: [AdvancedConfigDefaultsStack, VPCStack].
+*****************************************************************************
+*****************************************************************************
+Events:  
+TimeStamp                         ResourceStatus      ResourceType                LogicalResourceId                                           ResourceStatusReason
+--------------------------------  ------------------  --------------------------  ----------------------------------------------------------  ---------------------------------------------------------------------------------------------
+2021-07-05 17:21:56.069000+00:00  CREATE_FAILED       AWS::CloudFormation::Stack  tCaT-qs-workshop-defaults-06a55a96100b4d25874296190e87bf87  The following resource(s) failed to create: [AdvancedConfigDefaultsStack, VPCStack].
+2021-07-05 17:21:54.682000+00:00  CREATE_FAILED       AWS::CloudFormation::Stack  AdvancedConfigDefaultsStack                                 S3 error: The specified key does not exist.
+                                                                                                                                              For more information check http://docs.aws.amazon.com/AmazonS3/latest/API/ErrorResponses.html
+2021-07-05 17:21:54.469000+00:00  CREATE_FAILED       AWS::CloudFormation::Stack  VPCStack                                                    S3 error: The specified key does not exist.
+                                                                                                                                              For more information check http://docs.aws.amazon.com/AmazonS3/latest/API/ErrorResponses.html
+2021-07-05 17:21:54.015000+00:00  CREATE_IN_PROGRESS  AWS::CloudFormation::Stack  AdvancedConfigDefaultsStack
+2021-07-05 17:21:53.727000+00:00  CREATE_IN_PROGRESS  AWS::CloudFormation::Stack  VPCStack
+2021-07-05 17:21:45.050000+00:00  CREATE_IN_PROGRESS  AWS::CloudFormation::Stack  tCaT-qs-workshop-defaults-06a55a96100b4d25874296190e87bf87  User Initiated
+*****************************************************************************
+-----------------------------------------------------------------------------
+Tested on: Monday, 05. July 2021 05:22PM
+-----------------------------------------------------------------------------
+

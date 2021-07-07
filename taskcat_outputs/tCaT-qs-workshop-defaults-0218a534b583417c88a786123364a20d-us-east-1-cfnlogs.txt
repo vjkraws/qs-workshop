@@ -1,0 +1,317 @@
+-----------------------------------------------------------------------------
+Region: us-east-1
+StackName: tCaT-qs-workshop-defaults-0218a534b583417c88a786123364a20d
+*****************************************************************************
+ResourceStatusReason:  
+The following resource(s) failed to create: [AutoDetectSharedResources].
+*****************************************************************************
+*****************************************************************************
+Events:  
+TimeStamp                         ResourceStatus      ResourceType                LogicalResourceId                                           ResourceStatusReason
+--------------------------------  ------------------  --------------------------  ----------------------------------------------------------  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2021-07-05 16:07:08.200000+00:00  CREATE_FAILED       AWS::CloudFormation::Stack  tCaT-qs-workshop-defaults-0218a534b583417c88a786123364a20d  The following resource(s) failed to create: [AutoDetectSharedResources].
+2021-07-05 16:07:06.469000+00:00  CREATE_FAILED       AWS::CloudFormation::Stack  AutoDetectSharedResources                                   Embedded stack arn:aws:cloudformation:us-east-1:628530286159:stack/tCaT-qs-workshop-defaults-0218a534b583417c88a786123364a20d-AutoDetectSharedResources-RU5LEXUXCU44/3206f7d0-dda2-11eb-9b18-12d101416601 was not successfully created: The following resource(s) failed to create: [PreReqs].
+2021-07-05 15:07:19.779000+00:00  CREATE_COMPLETE     AWS::CloudFormation::Stack  VPCStack
+2021-07-05 15:04:21.716000+00:00  CREATE_COMPLETE     AWS::CloudFormation::Stack  AdvancedConfigDefaultsStack
+2021-07-05 15:03:47.638000+00:00  CREATE_IN_PROGRESS  AWS::CloudFormation::Stack  VPCStack                                                    Resource creation Initiated
+2021-07-05 15:03:47.093000+00:00  CREATE_IN_PROGRESS  AWS::CloudFormation::Stack  AdvancedConfigDefaultsStack                                 Resource creation Initiated
+2021-07-05 15:03:46.760000+00:00  CREATE_IN_PROGRESS  AWS::CloudFormation::Stack  VPCStack
+2021-07-05 15:03:46.279000+00:00  CREATE_IN_PROGRESS  AWS::CloudFormation::Stack  AdvancedConfigDefaultsStack
+2021-07-05 15:03:46.060000+00:00  CREATE_IN_PROGRESS  AWS::CloudFormation::Stack  AutoDetectSharedResources                                   Resource creation Initiated
+2021-07-05 15:03:45.373000+00:00  CREATE_IN_PROGRESS  AWS::CloudFormation::Stack  AutoDetectSharedResources
+2021-07-05 15:03:37.291000+00:00  CREATE_IN_PROGRESS  AWS::CloudFormation::Stack  tCaT-qs-workshop-defaults-0218a534b583417c88a786123364a20d  User Initiated
+*****************************************************************************
+-----------------------------------------------------------------------------
+Tested on: Monday, 05. July 2021 04:07PM
+-----------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------
+Region: us-east-1
+StackName: tCaT-qs-workshop-defaults-0218a534b583417c88a786123364a20d-VPCStack-1P5HX0GLRTQGH
+*****************************************************************************
+ResourceStatusReason:  
+Stack launch was successful
+*****************************************************************************
+*****************************************************************************
+Events:  
+TimeStamp                         ResourceStatus      ResourceType                           LogicalResourceId                                                                  ResourceStatusReason
+--------------------------------  ------------------  -------------------------------------  ---------------------------------------------------------------------------------  ---------------------------
+2021-07-05 15:07:12.839000+00:00  CREATE_COMPLETE     AWS::CloudFormation::Stack             tCaT-qs-workshop-defaults-0218a534b583417c88a786123364a20d-VPCStack-1P5HX0GLRTQGH
+2021-07-05 15:07:06.880000+00:00  CREATE_COMPLETE     AWS::EC2::Route                        PrivateSubnet1ARoute
+2021-07-05 15:07:04.855000+00:00  CREATE_COMPLETE     AWS::EC2::Route                        PrivateSubnet2ARoute
+2021-07-05 15:07:04.821000+00:00  CREATE_COMPLETE     AWS::EC2::Route                        PrivateSubnet3ARoute
+2021-07-05 15:06:51.516000+00:00  CREATE_IN_PROGRESS  AWS::EC2::Route                        PrivateSubnet1ARoute                                                               Resource creation Initiated
+2021-07-05 15:06:50.409000+00:00  CREATE_IN_PROGRESS  AWS::EC2::Route                        PrivateSubnet1ARoute
+2021-07-05 15:06:49.531000+00:00  CREATE_IN_PROGRESS  AWS::EC2::Route                        PrivateSubnet2ARoute                                                               Resource creation Initiated
+2021-07-05 15:06:49.502000+00:00  CREATE_IN_PROGRESS  AWS::EC2::Route                        PrivateSubnet3ARoute                                                               Resource creation Initiated
+2021-07-05 15:06:48.699000+00:00  CREATE_IN_PROGRESS  AWS::EC2::Route                        PrivateSubnet2ARoute
+2021-07-05 15:06:48.684000+00:00  CREATE_IN_PROGRESS  AWS::EC2::Route                        PrivateSubnet3ARoute
+2021-07-05 15:06:46.073000+00:00  CREATE_COMPLETE     AWS::EC2::NatGateway                   NATGateway1
+2021-07-05 15:06:44.991000+00:00  CREATE_COMPLETE     AWS::EC2::NatGateway                   NATGateway2
+2021-07-05 15:06:44.948000+00:00  CREATE_COMPLETE     AWS::EC2::NatGateway                   NATGateway3
+2021-07-05 15:04:57.675000+00:00  CREATE_IN_PROGRESS  AWS::EC2::NatGateway                   NATGateway1                                                                        Resource creation Initiated
+2021-07-05 15:04:57.408000+00:00  CREATE_IN_PROGRESS  AWS::EC2::NatGateway                   NATGateway2                                                                        Resource creation Initiated
+2021-07-05 15:04:57.312000+00:00  CREATE_IN_PROGRESS  AWS::EC2::NatGateway                   NATGateway3                                                                        Resource creation Initiated
+2021-07-05 15:04:56.867000+00:00  CREATE_IN_PROGRESS  AWS::EC2::NatGateway                   NATGateway1
+2021-07-05 15:04:56.703000+00:00  CREATE_IN_PROGRESS  AWS::EC2::NatGateway                   NATGateway2
+2021-07-05 15:04:56.401000+00:00  CREATE_IN_PROGRESS  AWS::EC2::NatGateway                   NATGateway3
+2021-07-05 15:04:54.284000+00:00  CREATE_COMPLETE     AWS::EC2::SubnetRouteTableAssociation  PublicSubnet2RouteTableAssociation
+2021-07-05 15:04:54.177000+00:00  CREATE_COMPLETE     AWS::EC2::SubnetRouteTableAssociation  PublicSubnet3RouteTableAssociation
+2021-07-05 15:04:53.751000+00:00  CREATE_COMPLETE     AWS::EC2::SubnetRouteTableAssociation  PublicSubnet1RouteTableAssociation
+2021-07-05 15:04:53.518000+00:00  CREATE_COMPLETE     AWS::EC2::SubnetRouteTableAssociation  PrivateSubnet3ARouteTableAssociation
+2021-07-05 15:04:53.317000+00:00  CREATE_COMPLETE     AWS::EC2::SubnetRouteTableAssociation  PrivateSubnet2ARouteTableAssociation
+2021-07-05 15:04:53.286000+00:00  CREATE_COMPLETE     AWS::EC2::SubnetRouteTableAssociation  PrivateSubnet1ARouteTableAssociation
+2021-07-05 15:04:52.785000+00:00  CREATE_COMPLETE     AWS::EC2::EIP                          NAT1EIP
+2021-07-05 15:04:52.641000+00:00  CREATE_COMPLETE     AWS::EC2::EIP                          NAT3EIP
+2021-07-05 15:04:52.561000+00:00  CREATE_COMPLETE     AWS::EC2::EIP                          NAT2EIP
+2021-07-05 15:04:52.502000+00:00  CREATE_COMPLETE     AWS::EC2::Route                        PublicSubnetRoute
+2021-07-05 15:04:51.826000+00:00  CREATE_IN_PROGRESS  AWS::EC2::EIP                          NAT3EIP                                                                            Resource creation Initiated
+2021-07-05 15:04:51.807000+00:00  CREATE_IN_PROGRESS  AWS::EC2::EIP                          NAT1EIP                                                                            Resource creation Initiated
+2021-07-05 15:04:51.550000+00:00  CREATE_IN_PROGRESS  AWS::EC2::EIP                          NAT2EIP                                                                            Resource creation Initiated
+2021-07-05 15:04:38.820000+00:00  CREATE_IN_PROGRESS  AWS::EC2::SubnetRouteTableAssociation  PublicSubnet3RouteTableAssociation                                                 Resource creation Initiated
+2021-07-05 15:04:38.695000+00:00  CREATE_IN_PROGRESS  AWS::EC2::SubnetRouteTableAssociation  PublicSubnet2RouteTableAssociation                                                 Resource creation Initiated
+2021-07-05 15:04:38.456000+00:00  CREATE_IN_PROGRESS  AWS::EC2::SubnetRouteTableAssociation  PublicSubnet1RouteTableAssociation                                                 Resource creation Initiated
+2021-07-05 15:04:38.002000+00:00  CREATE_IN_PROGRESS  AWS::EC2::SubnetRouteTableAssociation  PrivateSubnet2ARouteTableAssociation                                               Resource creation Initiated
+2021-07-05 15:04:37.922000+00:00  CREATE_IN_PROGRESS  AWS::EC2::SubnetRouteTableAssociation  PrivateSubnet1ARouteTableAssociation                                               Resource creation Initiated
+2021-07-05 15:04:37.903000+00:00  CREATE_IN_PROGRESS  AWS::EC2::SubnetRouteTableAssociation  PublicSubnet3RouteTableAssociation
+2021-07-05 15:04:37.887000+00:00  CREATE_IN_PROGRESS  AWS::EC2::SubnetRouteTableAssociation  PrivateSubnet3ARouteTableAssociation                                               Resource creation Initiated
+2021-07-05 15:04:37.590000+00:00  CREATE_IN_PROGRESS  AWS::EC2::SubnetRouteTableAssociation  PublicSubnet1RouteTableAssociation
+2021-07-05 15:04:37.531000+00:00  CREATE_IN_PROGRESS  AWS::EC2::SubnetRouteTableAssociation  PublicSubnet2RouteTableAssociation
+2021-07-05 15:04:37.162000+00:00  CREATE_IN_PROGRESS  AWS::EC2::Route                        PublicSubnetRoute                                                                  Resource creation Initiated
+2021-07-05 15:04:37.054000+00:00  CREATE_IN_PROGRESS  AWS::EC2::SubnetRouteTableAssociation  PrivateSubnet2ARouteTableAssociation
+2021-07-05 15:04:36.969000+00:00  CREATE_IN_PROGRESS  AWS::EC2::SubnetRouteTableAssociation  PrivateSubnet3ARouteTableAssociation
+2021-07-05 15:04:36.828000+00:00  CREATE_IN_PROGRESS  AWS::EC2::SubnetRouteTableAssociation  PrivateSubnet1ARouteTableAssociation
+2021-07-05 15:04:36.569000+00:00  CREATE_IN_PROGRESS  AWS::EC2::Route                        PublicSubnetRoute
+2021-07-05 15:04:36.549000+00:00  CREATE_IN_PROGRESS  AWS::EC2::EIP                          NAT3EIP
+2021-07-05 15:04:36.451000+00:00  CREATE_IN_PROGRESS  AWS::EC2::EIP                          NAT1EIP
+2021-07-05 15:04:36.099000+00:00  CREATE_IN_PROGRESS  AWS::EC2::EIP                          NAT2EIP
+2021-07-05 15:04:33.694000+00:00  CREATE_COMPLETE     AWS::EC2::Subnet                       PublicSubnet3
+2021-07-05 15:04:33.650000+00:00  CREATE_COMPLETE     AWS::EC2::Subnet                       PublicSubnet2
+2021-07-05 15:04:33.559000+00:00  CREATE_COMPLETE     AWS::EC2::Subnet                       PrivateSubnet1A
+2021-07-05 15:04:33.331000+00:00  CREATE_COMPLETE     AWS::EC2::Subnet                       PublicSubnet1
+2021-07-05 15:04:33.311000+00:00  CREATE_COMPLETE     AWS::EC2::Subnet                       PrivateSubnet3A
+2021-07-05 15:04:33.227000+00:00  CREATE_COMPLETE     AWS::EC2::Subnet                       PrivateSubnet2A
+2021-07-05 15:04:32.149000+00:00  CREATE_COMPLETE     AWS::EC2::VPCGatewayAttachment         VPCGatewayAttachment
+2021-07-05 15:04:23.467000+00:00  CREATE_COMPLETE     AWS::EC2::VPCEndpoint                  S3VPCEndpoint
+2021-07-05 15:04:23.146000+00:00  CREATE_IN_PROGRESS  AWS::EC2::VPCEndpoint                  S3VPCEndpoint                                                                      Resource creation Initiated
+2021-07-05 15:04:22.582000+00:00  CREATE_IN_PROGRESS  AWS::EC2::VPCEndpoint                  S3VPCEndpoint
+2021-07-05 15:04:18.600000+00:00  CREATE_COMPLETE     AWS::EC2::RouteTable                   PublicSubnetRouteTable
+2021-07-05 15:04:18.368000+00:00  CREATE_COMPLETE     AWS::EC2::RouteTable                   PrivateSubnet3ARouteTable
+2021-07-05 15:04:17.953000+00:00  CREATE_COMPLETE     AWS::EC2::RouteTable                   PrivateSubnet2ARouteTable
+2021-07-05 15:04:17.846000+00:00  CREATE_COMPLETE     AWS::EC2::RouteTable                   PrivateSubnet1ARouteTable
+2021-07-05 15:04:17.748000+00:00  CREATE_IN_PROGRESS  AWS::EC2::RouteTable                   PublicSubnetRouteTable                                                             Resource creation Initiated
+2021-07-05 15:04:17.429000+00:00  CREATE_IN_PROGRESS  AWS::EC2::Subnet                       PrivateSubnet1A                                                                    Resource creation Initiated
+2021-07-05 15:04:17.390000+00:00  CREATE_IN_PROGRESS  AWS::EC2::Subnet                       PublicSubnet2                                                                      Resource creation Initiated
+2021-07-05 15:04:17.363000+00:00  CREATE_IN_PROGRESS  AWS::EC2::Subnet                       PrivateSubnet3A                                                                    Resource creation Initiated
+2021-07-05 15:04:17.317000+00:00  CREATE_IN_PROGRESS  AWS::EC2::RouteTable                   PrivateSubnet3ARouteTable                                                          Resource creation Initiated
+2021-07-05 15:04:17.302000+00:00  CREATE_IN_PROGRESS  AWS::EC2::RouteTable                   PublicSubnetRouteTable
+2021-07-05 15:04:17.283000+00:00  CREATE_IN_PROGRESS  AWS::EC2::Subnet                       PrivateSubnet2A                                                                    Resource creation Initiated
+2021-07-05 15:04:17.146000+00:00  CREATE_IN_PROGRESS  AWS::EC2::Subnet                       PublicSubnet1                                                                      Resource creation Initiated
+2021-07-05 15:04:17.131000+00:00  CREATE_COMPLETE     AWS::EC2::VPCDHCPOptionsAssociation    VPCDHCPOptionsAssociation
+2021-07-05 15:04:17.064000+00:00  CREATE_IN_PROGRESS  AWS::EC2::RouteTable                   PrivateSubnet2ARouteTable                                                          Resource creation Initiated
+2021-07-05 15:04:17.018000+00:00  CREATE_IN_PROGRESS  AWS::EC2::VPCDHCPOptionsAssociation    VPCDHCPOptionsAssociation                                                          Resource creation Initiated
+2021-07-05 15:04:16.983000+00:00  CREATE_IN_PROGRESS  AWS::EC2::Subnet                       PublicSubnet3                                                                      Resource creation Initiated
+2021-07-05 15:04:16.927000+00:00  CREATE_IN_PROGRESS  AWS::EC2::RouteTable                   PrivateSubnet1ARouteTable                                                          Resource creation Initiated
+2021-07-05 15:04:16.914000+00:00  CREATE_IN_PROGRESS  AWS::EC2::Subnet                       PublicSubnet2
+2021-07-05 15:04:16.903000+00:00  CREATE_IN_PROGRESS  AWS::EC2::RouteTable                   PrivateSubnet3ARouteTable
+2021-07-05 15:04:16.872000+00:00  CREATE_IN_PROGRESS  AWS::EC2::VPCGatewayAttachment         VPCGatewayAttachment                                                               Resource creation Initiated
+2021-07-05 15:04:16.830000+00:00  CREATE_IN_PROGRESS  AWS::EC2::Subnet                       PrivateSubnet3A
+2021-07-05 15:04:16.797000+00:00  CREATE_IN_PROGRESS  AWS::EC2::Subnet                       PrivateSubnet1A
+2021-07-05 15:04:16.744000+00:00  CREATE_IN_PROGRESS  AWS::EC2::Subnet                       PrivateSubnet2A
+2021-07-05 15:04:16.645000+00:00  CREATE_IN_PROGRESS  AWS::EC2::Subnet                       PublicSubnet1
+2021-07-05 15:04:16.572000+00:00  CREATE_IN_PROGRESS  AWS::EC2::RouteTable                   PrivateSubnet2ARouteTable
+2021-07-05 15:04:16.496000+00:00  CREATE_IN_PROGRESS  AWS::EC2::Subnet                       PublicSubnet3
+2021-07-05 15:04:16.419000+00:00  CREATE_IN_PROGRESS  AWS::EC2::VPCGatewayAttachment         VPCGatewayAttachment
+2021-07-05 15:04:16.418000+00:00  CREATE_IN_PROGRESS  AWS::EC2::RouteTable                   PrivateSubnet1ARouteTable
+2021-07-05 15:04:16.215000+00:00  CREATE_IN_PROGRESS  AWS::EC2::VPCDHCPOptionsAssociation    VPCDHCPOptionsAssociation
+2021-07-05 15:04:12.602000+00:00  CREATE_COMPLETE     AWS::EC2::VPC                          VPC
+2021-07-05 15:04:12.175000+00:00  CREATE_COMPLETE     AWS::EC2::InternetGateway              InternetGateway
+2021-07-05 15:04:11.714000+00:00  CREATE_COMPLETE     AWS::EC2::DHCPOptions                  DHCPOptions
+2021-07-05 15:03:56.311000+00:00  CREATE_IN_PROGRESS  AWS::EC2::InternetGateway              InternetGateway                                                                    Resource creation Initiated
+2021-07-05 15:03:56.043000+00:00  CREATE_IN_PROGRESS  AWS::EC2::VPC                          VPC                                                                                Resource creation Initiated
+2021-07-05 15:03:55.958000+00:00  CREATE_IN_PROGRESS  AWS::EC2::DHCPOptions                  DHCPOptions                                                                        Resource creation Initiated
+2021-07-05 15:03:55.923000+00:00  CREATE_IN_PROGRESS  AWS::EC2::InternetGateway              InternetGateway
+2021-07-05 15:03:55.603000+00:00  CREATE_IN_PROGRESS  AWS::EC2::VPC                          VPC
+2021-07-05 15:03:55.544000+00:00  CREATE_IN_PROGRESS  AWS::EC2::DHCPOptions                  DHCPOptions
+2021-07-05 15:03:47.409000+00:00  CREATE_IN_PROGRESS  AWS::CloudFormation::Stack             tCaT-qs-workshop-defaults-0218a534b583417c88a786123364a20d-VPCStack-1P5HX0GLRTQGH  User Initiated
+*****************************************************************************
+-----------------------------------------------------------------------------
+Tested on: Monday, 05. July 2021 04:07PM
+-----------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------
+Region: us-east-1
+StackName: tCaT-qs-workshop-defaults-0218a534b583417c88a786123364a20d-AdvancedConfigDefaultsStack-CVHWFBYMF7TY
+*****************************************************************************
+ResourceStatusReason:  
+Stack launch was successful
+*****************************************************************************
+*****************************************************************************
+Events:  
+TimeStamp                         ResourceStatus      ResourceType                LogicalResourceId                                                                                    ResourceStatusReason
+--------------------------------  ------------------  --------------------------  ---------------------------------------------------------------------------------------------------  ---------------------------
+2021-07-05 15:04:14.633000+00:00  CREATE_COMPLETE     AWS::CloudFormation::Stack  tCaT-qs-workshop-defaults-0218a534b583417c88a786123364a20d-AdvancedConfigDefaultsStack-CVHWFBYMF7TY
+2021-07-05 15:04:13.147000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter         BastionIAMRoleNameParameter
+2021-07-05 15:04:12.847000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter         VaultUIAccessCIDRParameter
+2021-07-05 15:04:12.798000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter         EKSEncryptSecretsKmsKeyArnParameter
+2021-07-05 15:04:12.707000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter         OnDemandPercentageParameter
+2021-07-05 15:04:12.414000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter         BastionVariablesParameter
+2021-07-05 15:04:12.390000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter         EKSPublicAccessCIDRsParameter
+2021-07-05 15:04:11.957000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter         BastionIAMRoleNameParameter                                                                          Resource creation Initiated
+2021-07-05 15:04:11.828000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter         EKSEncryptSecretsKmsKeyArnParameter                                                                  Resource creation Initiated
+2021-07-05 15:04:11.795000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter         VaultUIAccessCIDRParameter                                                                           Resource creation Initiated
+2021-07-05 15:04:11.621000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter         OnDemandPercentageParameter                                                                          Resource creation Initiated
+2021-07-05 15:04:11.418000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter         EKSPublicAccessCIDRsParameter                                                                        Resource creation Initiated
+2021-07-05 15:04:11.323000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter         BastionVariablesParameter                                                                            Resource creation Initiated
+2021-07-05 15:04:09.614000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter         EKSPrivateAccessEndpointParameter
+2021-07-05 15:04:08.677000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter         EKSPrivateAccessEndpointParameter                                                                    Resource creation Initiated
+2021-07-05 15:04:08.311000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter         LaunchTemplateVersionParameter
+2021-07-05 15:04:07.967000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter         BastionEnableTCPForwardingParameter
+2021-07-05 15:04:07.846000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter         ConsulUILoadBalancerTypeParameter
+2021-07-05 15:04:07.658000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter         VaultNodesParameter
+2021-07-05 15:04:07.561000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter         KubernetesVersionParameter
+2021-07-05 15:04:07.496000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter         NodeInstanceType4Parameter
+2021-07-05 15:04:07.032000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter         LaunchTemplateVersionParameter                                                                       Resource creation Initiated
+2021-07-05 15:04:06.894000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter         BastionEnableTCPForwardingParameter                                                                  Resource creation Initiated
+2021-07-05 15:04:06.768000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter         ConsulUILoadBalancerTypeParameter                                                                    Resource creation Initiated
+2021-07-05 15:04:06.737000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter         ConsulVersionParameter
+2021-07-05 15:04:06.505000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter         VaultNodesParameter                                                                                  Resource creation Initiated
+2021-07-05 15:04:06.475000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter         KubernetesVersionParameter                                                                           Resource creation Initiated
+2021-07-05 15:04:06.278000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter         NodeInstanceType4Parameter                                                                           Resource creation Initiated
+2021-07-05 15:04:05.711000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter         ConsulVersionParameter                                                                               Resource creation Initiated
+2021-07-05 15:04:05.457000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter         ConsulUIAccessCIDRParameter
+2021-07-05 15:04:05.387000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter         CustomAmiIdParameter
+2021-07-05 15:04:05.339000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter         WindowsNodeVersionParameter
+2021-07-05 15:04:04.878000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter         ConsulNodesParameter
+2021-07-05 15:04:04.851000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter         NodeGroupNameParameter
+2021-07-05 15:04:04.650000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter         BastionInstanceTypeParameter
+2021-07-05 15:04:04.605000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter         BastionRootVolumeSizeParameter
+2021-07-05 15:04:04.446000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter         VaultVersionParameter
+2021-07-05 15:04:03.961000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter         TaintsParameter
+2021-07-05 15:03:59.222000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter         VaultKubernetesNameSpaceParameter
+2021-07-05 15:03:58.860000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter         VaultUILoadBalancerTypeParameter
+2021-07-05 15:03:58.798000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter         WindowsNodeEditionParameter
+2021-07-05 15:03:58.796000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter         VaultDeploymentSizeParameter
+2021-07-05 15:03:58.761000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter         EKSClusterLoggingTypesParameter
+2021-07-05 15:03:58.702000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter         BastionEnableX11ForwardingParameter
+2021-07-05 15:03:58.685000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter         EfsThroughputModeParameter
+2021-07-05 15:03:58.658000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter         NodeInstanceType2Parameter
+2021-07-05 15:03:58.655000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter         ConsulKubernetesNameSpaceParameter
+2021-07-05 15:03:58.618000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter         EKSEncryptSecretsParameter
+2021-07-05 15:03:58.603000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter         LabelsParameter
+2021-07-05 15:03:58.541000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter         NodeSecurityGroupIdParameter
+2021-07-05 15:03:58.525000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter         ConsulDeploymentSizeParameter
+2021-07-05 15:03:58.491000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter         BastionOSParameter
+2021-07-05 15:03:58.483000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter         LaunchTemplateIdParameter
+2021-07-05 15:03:58.348000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter         BastionBootstrapScriptParameter
+2021-07-05 15:03:58.304000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter         IamOidcProviderParameter
+2021-07-05 15:03:58.299000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter         EfsPerformanceModeParameter
+2021-07-05 15:03:58.183000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter         EfsProvisionedThroughputInMibpsParameter
+2021-07-05 15:03:58.072000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter         NodeInstanceType3Parameter
+2021-07-05 15:03:58.058000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter         NodeVolumeSizeParameter
+2021-07-05 15:03:57.898000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter         VaultKubernetesNameSpaceParameter                                                                    Resource creation Initiated
+2021-07-05 15:03:57.880000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter         VaultUILoadBalancerTypeParameter                                                                     Resource creation Initiated
+2021-07-05 15:03:57.783000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter         BastionEnableX11ForwardingParameter                                                                  Resource creation Initiated
+2021-07-05 15:03:57.740000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter         VaultDeploymentSizeParameter                                                                         Resource creation Initiated
+2021-07-05 15:03:57.739000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter         EKSClusterLoggingTypesParameter                                                                      Resource creation Initiated
+2021-07-05 15:03:57.707000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter         ConsulKubernetesNameSpaceParameter                                                                   Resource creation Initiated
+2021-07-05 15:03:57.688000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter         EKSEncryptSecretsParameter                                                                           Resource creation Initiated
+2021-07-05 15:03:57.674000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter         ConsulNodesParameter                                                                                 Resource creation Initiated
+2021-07-05 15:03:57.650000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter         NodeSecurityGroupIdParameter                                                                         Resource creation Initiated
+2021-07-05 15:03:57.649000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter         LabelsParameter                                                                                      Resource creation Initiated
+2021-07-05 15:03:57.599000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter         ConsulDeploymentSizeParameter                                                                        Resource creation Initiated
+2021-07-05 15:03:57.583000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter         NodeInstanceType2Parameter                                                                           Resource creation Initiated
+2021-07-05 15:03:57.578000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter         WindowsNodeEditionParameter                                                                          Resource creation Initiated
+2021-07-05 15:03:57.578000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter         BastionRootVolumeSizeParameter                                                                       Resource creation Initiated
+2021-07-05 15:03:57.549000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter         ConsulUIAccessCIDRParameter                                                                          Resource creation Initiated
+2021-07-05 15:03:57.514000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter         NodeGroupNameParameter                                                                               Resource creation Initiated
+2021-07-05 15:03:57.465000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter         BastionBootstrapScriptParameter                                                                      Resource creation Initiated
+2021-07-05 15:03:57.439000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter         WindowsNodeVersionParameter                                                                          Resource creation Initiated
+2021-07-05 15:03:57.429000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter         EfsPerformanceModeParameter                                                                          Resource creation Initiated
+2021-07-05 15:03:57.421000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter         VaultVersionParameter                                                                                Resource creation Initiated
+2021-07-05 15:03:57.405000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter         LaunchTemplateIdParameter                                                                            Resource creation Initiated
+2021-07-05 15:03:57.393000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter         EfsThroughputModeParameter                                                                           Resource creation Initiated
+2021-07-05 15:03:57.348000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter         CustomAmiIdParameter                                                                                 Resource creation Initiated
+2021-07-05 15:03:57.344000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter         BastionInstanceTypeParameter                                                                         Resource creation Initiated
+2021-07-05 15:03:57.342000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter         IamOidcProviderParameter                                                                             Resource creation Initiated
+2021-07-05 15:03:57.322000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter         BastionOSParameter                                                                                   Resource creation Initiated
+2021-07-05 15:03:57.311000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter         TaintsParameter                                                                                      Resource creation Initiated
+2021-07-05 15:03:57.221000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter         EfsProvisionedThroughputInMibpsParameter                                                             Resource creation Initiated
+2021-07-05 15:03:57.202000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter         NodeInstanceType3Parameter                                                                           Resource creation Initiated
+2021-07-05 15:03:57.180000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter         NodeVolumeSizeParameter                                                                              Resource creation Initiated
+2021-07-05 15:03:56.821000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter         EKSPrivateAccessEndpointParameter
+2021-07-05 15:03:56.408000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter         OnDemandPercentageParameter
+2021-07-05 15:03:56.341000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter         BastionIAMRoleNameParameter
+2021-07-05 15:03:56.176000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter         EKSEncryptSecretsKmsKeyArnParameter
+2021-07-05 15:03:56.171000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter         EKSPublicAccessCIDRsParameter
+2021-07-05 15:03:56.134000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter         BastionVariablesParameter
+2021-07-05 15:03:56.062000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter         EKSEncryptSecretsParameter
+2021-07-05 15:03:56.006000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter         NodeSecurityGroupIdParameter
+2021-07-05 15:03:55.980000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter         VaultUILoadBalancerTypeParameter
+2021-07-05 15:03:55.980000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter         NodeInstanceType2Parameter
+2021-07-05 15:03:55.964000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter         VaultNodesParameter
+2021-07-05 15:03:55.953000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter         ConsulKubernetesNameSpaceParameter
+2021-07-05 15:03:55.945000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter         VaultDeploymentSizeParameter
+2021-07-05 15:03:55.940000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter         NodeInstanceType4Parameter
+2021-07-05 15:03:55.915000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter         LaunchTemplateVersionParameter
+2021-07-05 15:03:55.899000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter         BastionBootstrapScriptParameter
+2021-07-05 15:03:55.895000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter         ConsulNodesParameter
+2021-07-05 15:03:55.839000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter         ConsulUILoadBalancerTypeParameter
+2021-07-05 15:03:55.836000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter         BastionEnableX11ForwardingParameter
+2021-07-05 15:03:55.808000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter         BastionRootVolumeSizeParameter
+2021-07-05 15:03:55.807000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter         VaultKubernetesNameSpaceParameter
+2021-07-05 15:03:55.784000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter         ConsulDeploymentSizeParameter
+2021-07-05 15:03:55.741000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter         NodeGroupNameParameter
+2021-07-05 15:03:55.736000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter         CustomAmiIdParameter
+2021-07-05 15:03:55.735000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter         KubernetesVersionParameter
+2021-07-05 15:03:55.731000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter         TaintsParameter
+2021-07-05 15:03:55.716000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter         ConsulVersionParameter
+2021-07-05 15:03:55.715000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter         LaunchTemplateIdParameter
+2021-07-05 15:03:55.701000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter         IamOidcProviderParameter
+2021-07-05 15:03:55.685000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter         LabelsParameter
+2021-07-05 15:03:55.668000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter         BastionOSParameter
+2021-07-05 15:03:55.667000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter         BastionEnableTCPForwardingParameter
+2021-07-05 15:03:55.665000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter         EfsPerformanceModeParameter
+2021-07-05 15:03:55.626000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter         BastionInstanceTypeParameter
+2021-07-05 15:03:55.569000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter         EfsThroughputModeParameter
+2021-07-05 15:03:55.557000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter         VaultVersionParameter
+2021-07-05 15:03:55.541000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter         NodeVolumeSizeParameter
+2021-07-05 15:03:55.540000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter         WindowsNodeVersionParameter
+2021-07-05 15:03:55.535000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter         WindowsNodeEditionParameter
+2021-07-05 15:03:55.524000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter         NodeInstanceType3Parameter
+2021-07-05 15:03:55.510000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter         VaultUIAccessCIDRParameter
+2021-07-05 15:03:55.506000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter         EfsProvisionedThroughputInMibpsParameter
+2021-07-05 15:03:55.474000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter         ConsulUIAccessCIDRParameter
+2021-07-05 15:03:55.466000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter         EKSClusterLoggingTypesParameter
+2021-07-05 15:03:46.894000+00:00  CREATE_IN_PROGRESS  AWS::CloudFormation::Stack  tCaT-qs-workshop-defaults-0218a534b583417c88a786123364a20d-AdvancedConfigDefaultsStack-CVHWFBYMF7TY  User Initiated
+*****************************************************************************
+-----------------------------------------------------------------------------
+Tested on: Monday, 05. July 2021 04:07PM
+-----------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------
+Region: us-east-1
+StackName: tCaT-qs-workshop-defaults-0218a534b583417c88a786123364a20d-AutoDetectSharedResources-RU5LEXUXCU44
+*****************************************************************************
+ResourceStatusReason:  
+The following resource(s) failed to create: [PreReqs].
+*****************************************************************************
+*****************************************************************************
+Events:  
+TimeStamp                         ResourceStatus      ResourceType                LogicalResourceId                                                                                  ResourceStatusReason
+--------------------------------  ------------------  --------------------------  -------------------------------------------------------------------------------------------------  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2021-07-05 16:04:31.156000+00:00  CREATE_FAILED       AWS::CloudFormation::Stack  tCaT-qs-workshop-defaults-0218a534b583417c88a786123364a20d-AutoDetectSharedResources-RU5LEXUXCU44  The following resource(s) failed to create: [PreReqs].
+2021-07-05 16:04:28.279000+00:00  CREATE_FAILED       Custom::PreReqs             PreReqs                                                                                            CloudFormation did not receive a response from your Custom Resource. Please check your logs for requestId [274e95f7-48db-4f25-8b14-233008a99b76]. If you are using the Python cfn-response module, you may need to update your Lambda function code so that CloudFormation can attach the updated version.
+2021-07-05 15:04:12.537000+00:00  CREATE_IN_PROGRESS  Custom::PreReqs             PreReqs
+2021-07-05 15:04:09.788000+00:00  CREATE_COMPLETE     AWS::Lambda::Function       PreReqsFunction
+2021-07-05 15:04:09.442000+00:00  CREATE_IN_PROGRESS  AWS::Lambda::Function       PreReqsFunction                                                                                    Resource creation Initiated
+2021-07-05 15:04:07.108000+00:00  CREATE_IN_PROGRESS  AWS::Lambda::Function       PreReqsFunction
+2021-07-05 15:04:04.403000+00:00  CREATE_COMPLETE     AWS::IAM::Role              PreReqsRole
+2021-07-05 15:03:50.652000+00:00  CREATE_IN_PROGRESS  AWS::IAM::Role              PreReqsRole                                                                                        Resource creation Initiated
+2021-07-05 15:03:50.198000+00:00  CREATE_IN_PROGRESS  AWS::IAM::Role              PreReqsRole
+2021-07-05 15:03:45.953000+00:00  CREATE_IN_PROGRESS  AWS::CloudFormation::Stack  tCaT-qs-workshop-defaults-0218a534b583417c88a786123364a20d-AutoDetectSharedResources-RU5LEXUXCU44  User Initiated
+*****************************************************************************
+-----------------------------------------------------------------------------
+Tested on: Monday, 05. July 2021 04:07PM
+-----------------------------------------------------------------------------
+
